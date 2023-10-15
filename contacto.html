@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda de Ropa</title>
+    <link rel="stylesheet" href="style.css"">
+    
+  </head>
+  <body>
+    <header class="header">
+      <div class="menu container">
+        <!-- Colocar el logo formato SVG -->
+        <a href="#" class="logo"><img src="" alt="Logo" /></a>
+        <input type="checkbox" id="menu" />
+        <label for="menu">
+          <!-- colocar link de imagen (Corroborar que el link vaya al "menu")  -->
+          <img src="#" class="menu-icono" alt="menu"/></label>
+
+        <nav class="navmenu">
+          <a href="index.html">Inicio</a>
+          <a href="productos.html">Productos</a>
+          <a href="acercaDe.html">Acerca de</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+      </div>
+      
+    </header>
+
+    <main>
+
+      <!-- formulario de contacto -->
+      
+        <h1>Formulario de Contacto</h1>
+
+        <br><br>
+
+        <fieldset>
+
+          <legend>dejanos aqui tu consulta</legend>
+          <section>
+            <form action="https://formspree.io/f/xqkvwdow" method="post" target="_blank">
+          
+              <div>
+                <label for="nombre">nombre</label>
+                <input type="text" name="nombre" id="nombre" required>          
+              </div>
+          
+              <br>
+          
+              <div>
+                <label for="apellido">apellido:</label>
+                <input type="text" name="apellido" id="apellido" required>
+              </div>
+          
+              <br>
+          
+              <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+              </div>
+          
+              <br>
+          
+              <div>
+                <label for="telefono">telefono</label>
+                <input type="tel" id="telefono" required>
+              </div>
+              
+              <br>
+            
+              <div>
+                <label for="">consulta</label>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+              </div>
+
+              <br>
+
+              <div>
+                <input type="submit" value="enviar">
+                <input type="reset" value="borrar">
+              </div>
+            </form>
+          </section>
+
+
+        </fieldset>   
+        
+
+      
+      
+    </main>
+    <footer class="footer">
+      
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+

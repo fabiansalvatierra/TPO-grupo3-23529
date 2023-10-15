@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat:wght@500&family=Sansita:ital,wght@0,400;1,400;1,700;1,800&display=swap");
+
+/* font-family: 'Architects Daughter', cursive;
+font-family: 'Caveat', cursive;
+font-family: 'Sansita', sans-serif; 
+*/
+/*section {
+    display: flex;
+    width: 700px;
+    height: 530px;
+}
+section img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+section img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}*/
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  /* tex decoration: para quitar la linea de abajo de los enlaces */
+  text-decoration: none;
+  /* list-style para quitar las viñetas de las listas*/
+}
+
+body {
+  font-family: "Sansita", sans-serif;
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.header {
+  /* align-items alinea los elementos hijos de una misma fila entre sí */
+  align-items: center;
+  min-height: 70vh;
+}
+
+.menu {
+  background-color: #f05801;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  display: flex;
+  align-items: center;
+  /* justify-content es una propiedad del contenedor flex y controla el alineamiento de los elementos de una caja flexible */
+  justify-content: space-between;
+}
+
+.menu .navmenu a {
+  position: relative;
+  float: left;
+  font-size: 18px;
+  padding: 20px;
+  display: block;
+  color: #eff2f0;
+  font-weight: 600;
+}
+#menu {
+  display: none;
+}
+.menu-icono {
+  width: 25px;
+  display: none;
+}
+.manu label {
+  cursor: pointer;
+  display: none;
+}
+
+.header-txt h1 {
+  font-family: "Sansita", sans-serif;
+  padding: 70px;
+  color: #a0522d;
+  font-size: 50px;
+  line-height: 60px;
+  margin-bottom: 15px;
+}
+
+/* falta colocar header-txt p para definir color tamaño de letra */
+
+.btn-1 {
+  /* display inline-block para ocupar bien el padding */
+  display: inline-block;
+  padding: 13px 25px;
+  background-color: #d2b0a0;
+  color: #008080;
+  font-size: 16px;
+  /* para que cada palabra inicie con mayuscula */
+  text-transform: capitalize;
+}
+.btn-1:hover {
+  background-color: #d2b0a0;
+}
+.header-content {
+  /* display flex, con esto las img principales se van para encima del titulo  */
+  display: flex;
+}
+
+.header-txt {
+  width: 50%;
+}
+.header-img {
+  padding: 70px;
+  width: 50%;
+  /* text-align right, por que quiero la imagen a la derecha */
+  text-align: right;
+}
+.header-img img {
+  width: 500px;
+}
+.ofert {
+  /* agregar una imagen en formato SVG en el parectesis */
+  background-image: url();
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.ofert h2 {
+  font-size: 50px;
+  color: #2c150b;
+  font-family: "Sansita", sans-serif;
+  margin: 60px 0 40px 0;
+}
+
+.ofert-countent {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+
+.ofert-1 img {
+  width: 280px;
+}
+.ofert-1 h3 {
+  font-family: "Sansita", sans-serif;
+  color: #d2b48c;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.ofert-1 p {
+  font-size: 16px;
+  color: #fff5ee;
+}
+
+.producto {
+  margin-top: -5px;
+  padding: 25px 0;
+  background-color: #2e8b57;
+  text-align: center;
+}
+
+.producto h2 {
+  font-size: 50px;
+  color: #ffe4c4;
+}
+
+.producto-1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.producto-info {
+  align-items: center;
+  text-align: left;
+  margin-bottom: 35px;
+}
+
+.producto-txt {
+  width: 50%;
+}
+.producto-in {
+  margin-left: 20px;
+}
+
+.producto-in h3 {
+  font-family: "Sansita", sans-serif;
+  color: #2c150b;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+.producto-in p {
+  color: #d2b0a0;
+  font-size: 16px;
+}
+
+.producto-img {
+  width: 50%;
+}
+
+.producto-img img {
+  width: 500px;
+}
+
+.bg-producto {
+  /* colocar link de imagen SVG */
+  background-image: url();
+  padding: 50px o;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150px;
+}
+.bg-producto h1 {
+  font-family: "Sansita", sans-serif;
+  color: #a0522d;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+.bg-producto h3 {
+  font-family: "Sansita", sans-serif;
+  color: #a0522d;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+.bg-producto p {
+  color: #d2b0a0;
+  font-size: 16px;
+}
+
+.mapa-ubicacion {
+  padding: 100px;
+  display: flex;
+}
+
+.mapa-1 {
+  width: 50%;
+}
+.mapa-1 h2 {
+  font-size: 50px;
+  color: #2c150b;
+  font-family: "Sansita", sans-serif;
+  margin-bottom: 35%;
+}
+
+.mapa-1 p {
+  font-size: 16px;
+  color: #a0522d;
+  margin-bottom: 15px;
+}
+/* para cuando se agregue la ubicaciona utilizar la class> map */
+.map {
+  width: 600px;
+  height: 400px;
+}
+.footer {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 20px 0;
+  background-color: #2c150b;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+.link h3 {
+  color: #a0522d;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+.link a {
+  color: #008080;
+  font-size: 15px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+
